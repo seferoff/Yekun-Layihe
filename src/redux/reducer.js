@@ -1,4 +1,4 @@
-import { ADD_IMAGES, ADD_TO_BASKET } from "./action.js";
+import { ADD_IMAGES, ADD_TO_BASKET, REMOVE_FROM_BASKET } from "./action.js";
 
 const initialState = {
   images: [
@@ -27,16 +27,19 @@ const initialState = {
       url: "https://cdn.dsmcdn.com/mnresize/1200/1800/ty623/product/media/images/20221203/16/226809070/638545315/1/1_org_zoom.jpg",
     },
   ],
-  basket: [],
+  basket: JSON.parse(localStorage.getItem("basket")) || [],
 };
 
 const reducer = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case ADD_IMAGES: {
-      return {...state, images: payload}
+      return { ...state, images: payload };
     }
     case ADD_TO_BASKET: {
+      return { ...state, basket: payload };
+    }
+    case REMOVE_FROM_BASKET: {
       return { ...state, basket: payload };
     }
     default:

@@ -1,12 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import basketLogo from "../../icons/basket.png";
-import store from "../../redux/store";
 import "./Navbar.css";
 
 const Navbar = () => {
   let classname = "clicked";
-
+  const basket = useSelector((state) => state.basket);
+  
   return (
     <div className="navbar">
       <div className="head-nav">
@@ -44,17 +45,17 @@ const Navbar = () => {
             Contact Us
           </NavLink>
         </div>
-          <NavLink className="basket-button-nav" to="/basket">
-            <button className="basket-button">
-              <div className="count-div">{store.getState().basket.length}</div>
-              <img
-                className="basket"
-                src={basketLogo}
-                alt="Basket"
-                title="Basket"
-              />
-            </button>
-          </NavLink>
+        <NavLink className="basket-button-nav" to="/basket">
+          <button className="basket-button">
+            <div className="count-div">{basket.length}</div>
+            <img
+              className="basket"
+              src={basketLogo}
+              alt="Basket"
+              title="Basket"
+            />
+          </button>
+        </NavLink>
       </div>
     </div>
   );

@@ -6,7 +6,6 @@ import BuyProduct from "../../Components/BuyProduct/BuyProduct";
 
 const Products = () => {
   const [data, setData] = useState([]);
-  const [choise, setChoise] = useState([]);
   const [images, setImages] = useState([]);
   useEffect(() => {
     setImages(store.getState().images);
@@ -78,7 +77,7 @@ const Products = () => {
                   </div>
                   <div className="info-container">
                     <div className="left-info">
-                      <div className="item photo">
+                      <div className="item-photo">
                         <img
                           className="product-photo"
                           src={item.image}
@@ -95,11 +94,7 @@ const Products = () => {
                         <span className="item-span">Count: </span>
                         {item.rating.count}
                       </div>
-                      <BuyProduct
-                        product={item}
-                        choise={choise}
-                        setChoise={setChoise}
-                      />
+                      <BuyProduct product={item} />
                     </div>
                     <div className="right-info">
                       <div className="item description">
