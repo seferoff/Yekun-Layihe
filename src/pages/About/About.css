@@ -1,0 +1,25 @@
+.about-main {
+    margin: 50px;
+}
+
+.about-h1 {
+    text-align: center;
+}
+
+.about-h1, .about-h2, .about-h3 {
+    text-indent: 40px;
+    color: #b32728;
+    margin-top: 50px;
+}
+
+.about-p {
+    text-indent: 40px;
+}
+
+.about-ul {
+    list-style: none;
+}
+
+.about-li {
+    margin-top: 5px;
+}
