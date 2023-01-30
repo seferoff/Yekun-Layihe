@@ -1,0 +1,54 @@
+.head-nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.link {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.link.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .link:not(:first-child) {
+    display: none;
+  }
+  .icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .head-nav.responsive {
+    position: relative;
+  }
+  .head-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .head-nav.responsive .link {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

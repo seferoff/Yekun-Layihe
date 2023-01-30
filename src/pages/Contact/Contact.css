@@ -92,3 +92,35 @@ input {
   margin: 0;
   color: black;
 }
+
+@media (max-width: 900px) and (min-width: 501px) {
+  .contact-info {
+    display: block;
+    position: static;
+  }
+
+  .icons, .adress-info {
+    position: static;
+    margin-top: 20px;
+  }
+
+  input, .request, .user-form {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-info {
+    display: block;
+    position: static;
+  }
+
+  .icons, .adress-info {
+    position: static;
+    margin-top: 20px;
+  }
+
+  input, .request, .user-form {
+    width: 200px;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_TO_BASKET } from "../../redux/action.js";
 import { useState } from "react";
+import "./BuyProduct.css"
 
 const BuyProduct = (props) => {
   const [count, setCount] = useState(0);
@@ -38,6 +39,7 @@ const BuyProduct = (props) => {
   return (
     <div className="buyProduct">
       <div className="buy-product">
+        <div className="left-buttons">
         <button className="minus" onClick={decreaseCount}>
           -
         </button>
@@ -52,9 +54,12 @@ const BuyProduct = (props) => {
         <button className="plus" onClick={increaseCount}>
           +
         </button>
+        </div>
+        <div className="right-buttons">
         <button className="add-to" onClick={() => addBasket(product)}>
-          Add
+          Add to basket
         </button>
+        </div>
       </div>
     </div>
   );

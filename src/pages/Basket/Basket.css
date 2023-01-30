@@ -32,6 +32,12 @@
   margin-bottom: 10px;
 }
 
+.basket-item-span {
+  color: #b32728;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .basket-span {
   margin-right: 10px;
 }
@@ -50,7 +56,7 @@
 .remove-button {
   width: 100px;
   height: 40px;
-  background-color: rgb(70, 69, 69);
+  background-color: #a44;
   color: white;
   cursor: pointer;
   border: none;
@@ -68,4 +74,25 @@
 
 .cost-h3 {
   font-size: 20px;
+}
+
+
+@media (max-width: 800px) {
+  span, .basket-h3, .basket-item-span {
+    font-size: 10px;
+  }
+
+  .remove-container, .item-price, .basket-span {
+    display: block;
+  }
+
+  .total-cost {
+    width: 40%;
+    margin: 20px auto;
+  }
+  
+  .cost-h3 {
+    font-size: 10px;
+    margin-left: 10px;
+  }
 }

@@ -29,8 +29,8 @@ const Basket = () => {
       </div>
       <ul className="basket-ul">
         {basket.map((item) => (
-          <div className="basket-div">
-            <li className="basket-li" key={item.id}>
+          <div className="basket-div" key={item.id}>
+            <li className="basket-li">
               <div className="basket-item-title">
                 <h3 className="basket-h3">{item.title}</h3>
               </div>
@@ -54,15 +54,15 @@ const Basket = () => {
                 </div>
                 <div className="item-price">
                   <span className="basket-span">
-                    <span className="item-span">Price: </span>
+                    <span className="basket-item-span">Price: </span>
                     {item.price} USD
                   </span>
                   <span className="basket-span">
-                    <span className="item-span">Count: </span>
+                    <span className="basket-item-span">Count: </span>
                     {item.count}
                   </span>
                   <span className="basket-span">
-                    <span className="item-span">Cost: </span>
+                    <span className="basket-item-span">Cost: </span>
                     {item.count * item.price} USD
                   </span>
                 </div>
