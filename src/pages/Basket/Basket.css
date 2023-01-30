@@ -1,5 +1,9 @@
-.basket-ul {
+.basket-main {
   max-width: 100%;
+  min-height: 400px;
+}
+
+.basket-ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,4 +59,13 @@
 
 .remove-button:hover {
   background-color: #b32728;
+}
+
+.total-cost {
+  width: 40%;
+  margin: 20px auto;
+}
+
+.cost-h3 {
+  font-size: 20px;
 }
