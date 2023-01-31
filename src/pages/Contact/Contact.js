@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import whatsappLogo from "../../icons/whatsapp-logo.png";
-import faceLogo from "../../icons/facebook-logo.jpg";
-import instaLogo from "../../icons/insta-logo.png";
+import { SiWhatsapp, SiFacebook, SiInstagram } from "react-icons/si"
 
 const Contact = () => {
   const [nameValue, setNameValue] = useState("");
@@ -102,11 +100,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  className="whatsapp logo"
-                  src={whatsappLogo}
-                  alt="Whatsapp"
-                />
+                <SiWhatsapp className="logo" title="+994 55 603 05 07"/>
               </a>
             </button>
             <button className="contact" title="Intigam Seferoff">
@@ -115,7 +109,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="facebook logo" src={faceLogo} alt="Facebook" />
+                <SiFacebook className="logo"/>
               </a>
             </button>
             <button className="contact" title="Intiqam Seferoff">
@@ -124,7 +118,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="insta logo" src={instaLogo} alt="Instagram" />
+                <SiInstagram className="logo"/>
               </a>
             </button>
           </div>
