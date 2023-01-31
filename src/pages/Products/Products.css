@@ -60,6 +60,7 @@
 }
 
 .item-photo {
+  width: 100%;
   border: dashed 1px gray;
   padding: 5px;
   display: flex;
@@ -74,7 +75,7 @@
 }
 
 .product-photo {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 3 / 4;
 }
 
