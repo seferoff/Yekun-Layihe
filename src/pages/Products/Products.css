@@ -39,7 +39,7 @@
 
 .product-ul {
   list-style-type: none;
-  width: 60%;
+  width: 70%;
   margin-left: 50px;
 }
 
@@ -79,7 +79,7 @@
 
 .product-photo {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 5 / 4;
 }
 
 .description {
@@ -108,7 +108,7 @@
   aspect-ratio: 4/5;
 }
 
-@media (max-width: 1001px) and (min-width: 601px) {
+@media (max-width: 1101px) and (min-width: 601px) {
   .product-ul {
     width: 80%;
     margin-left: 30px;
